@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
+import { Toaster } from '@/components/ui/Toaster'
 
 export const metadata = {
   title: 'Breadit',
@@ -26,6 +27,7 @@ export default function RootLayout({
         <div className='container max-w-7xl mx-auto h-full pt-12'>
         {children}
         </div>
+        <Toaster />
       </body>
     </html>
   )
