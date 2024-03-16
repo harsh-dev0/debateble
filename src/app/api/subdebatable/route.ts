@@ -31,12 +31,12 @@ export async function POST(req: Request) {
             
        })
 
-       return new Response('subdebatable.name')
+       return new Response(subdebatable.name)
     } catch (error) {
         
         if(error instanceof z.ZodError){
             return new Response(error.message, { status: 422 })
         }
-        return new Response('Could not create subreddit', { status: 500 })
+        return new Response('Could not create subdebatable', { status: 500 })
     }
 }
