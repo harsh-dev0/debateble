@@ -7,7 +7,7 @@ import Providers from '@/components/Providers'
 
 export const metadata = {
   title: 'Debatable',
-  description: 'A Reddit clone built with Next.js and TypeScript.',
+  description: 'Online debating - social media platform.',
 }
 
 const inter = Inter({ subsets: ['latin'] })

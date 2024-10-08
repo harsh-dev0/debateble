@@ -59,7 +59,7 @@ export const Editor: React.FC<EditorProps> = ({ subdebatableId }) => {
       })
     },
     onSuccess: () => {
-      // turn pathname /r/mycommunity/submit into /r/mycommunity
+      // turn pathname /d/mycommunity/submit into /d/mycommunity
       const newPathname = pathname.split('/').slice(0, -1).join('/')
       router.push(newPathname)
 

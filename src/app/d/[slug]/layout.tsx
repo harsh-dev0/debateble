@@ -10,8 +10,8 @@ import { notFound } from 'next/navigation'
 import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Breadit',
-  description: 'A debatable clone built with Next.js and TypeScript.',
+  title: 'Debatable',
+  description: 'Online debating - social media platform',
 }
 
 const Layout = async ({
@@ -71,7 +71,7 @@ const Layout = async ({
           {/* info sidebar */}
           <div className='overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last'>
             <div className='px-6 py-4'>
-              <p className='font-semibold py-3'>About r/{subdebatable.name}</p>
+              <p className='font-semibold py-3'>About d/{subdebatable.name}</p>
             </div>
             <dl className='divide-y divide-gray-100 px-6 py-4 text-sm leading-6 bg-white'>
               <div className='flex justify-between gap-x-4 py-3'>
@@ -106,7 +106,7 @@ const Layout = async ({
                   variant: 'outline',
                   className: 'w-full mb-6',
                 })}
-                href={`r/${slug}/submit`}>
+                href={`d/${slug}/submit`}>
                 Create Post
               </Link>
             </dl>

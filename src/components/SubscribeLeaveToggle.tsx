@@ -53,7 +53,7 @@ const SubscribeLeaveToggle = ({
       })
       toast({
         title: 'Subscribed!',
-        description: `You are now subscribed to r/${subdebatableName}`,
+        description: `You are now subscribed to d/${subdebatableName}`,
       })
     },
   })
@@ -82,7 +82,7 @@ const SubscribeLeaveToggle = ({
       })
       toast({
         title: 'Unsubscribed!',
-        description: `You are now unsubscribed from/${subdebatableName}`,
+        description: `You are now unsubscribed from d/${subdebatableName}`,
       })
     },
   })
